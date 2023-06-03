@@ -12,7 +12,7 @@ const { hostname } = require('os');
 route(app);
 var port =process.env.PORT||5000;
 const server =http.createServer(app);
-mongoose.connect('mongodb+srv://ntnguyen041:123456Aa@cluster0.2fkoqsr.mongodb.net/Node-API?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://admin:admin123@smarthome.dahnw7r.mongodb.net/NODE-API?retryWrites=true&w=majority')
 .then(()=>{
    console.log('connect to mongodb')
   server.listen(port,() =>
